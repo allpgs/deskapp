@@ -24,7 +24,7 @@ export default function ButtonAppBar() {
         <AppBar position="static">
             <Toolbar>
             <Typography variant="h6" className={classes.title}>
-              <NavLink to="/" className="menu" style={{textDecoration: "none", color: "white"}}>DeskApp</NavLink>
+              <NavLink to="/" className="menu" style={{textDecoration: "none", color: "white"}}>DeskApp</NavLink> 
             </Typography>
             <NavLink to="/" className="menu" style={{textDecoration: "none", color: "white"}}><Button color="inherit">Home</Button></NavLink><div style={{marginLeft: '15px', marginRight: '15px'}}></div>
             <NavLink to="/features" className="menu" style={{textDecoration: "none", color: "white"}}><Button color="inherit">Features</Button></NavLink><div style={{marginLeft: '15px', marginRight: '15px'}}></div>

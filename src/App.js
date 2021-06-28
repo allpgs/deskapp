@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom'
+import { Home, Features } from './pages/'
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/"><Home /></Route>
+        <Route path="/features"><Features /></Route>
+        <Redirect from="/downloads" to="/features"></Redirect>
+        <Redirect from="/sources" to="/features"></Redirect>
+        <Route path="/"><Header /><h1 style={{textAlign: "center"}}>404 Not Found</h1><h3 style={{textAlign: "center"}}>파일이 삭제되었거나 주소가 잘못 되어 있을 수 있습니다.<br />다시 한번 확인해 주시기 바랍니다.</h3></Route>
+      </Switch>
     </div>
   );
 }

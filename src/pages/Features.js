@@ -9,7 +9,7 @@ const featurej = [
         'alt': 'https://time.navyism.com/',
         'name': 'Navyism',
         'links': 'https://placeimg.com/48/48/3',
-        'github': 'allpgs/navyism'
+        'github': 'deskapp-pj/navyism'
     },
     {
         'id': 2,
@@ -17,7 +17,7 @@ const featurej = [
         'alt': 'https://www.dbdbschool.kr/',
         'name': 'dbdbschool',
         'links': 'https://placeimg.com/48/48/3',
-        'github': 'allpgs/dbdbschool'
+        'github': 'deskapp-pj/dbdbschool'
     },
     {
         'id': 3,
@@ -25,7 +25,7 @@ const featurej = [
         'alt': 'https://www.ealimi.com/',
         'name': '이알리미',
         'links': 'https://placeimg.com/48/48/3',
-        'github': 'allpgs/ealimi',
+        'github': 'deskapp-pj/ealimi',
     }
 ]
 

@@ -8,7 +8,7 @@ const featurej = [
         'sites': 'https://time.navyism.com/',
         'alt': 'https://time.navyism.com/',
         'name': 'Navyism',
-        'links': 'https://placeimg.com/48/48/3',
+        'image': "https://raw.githubusercontent.com/deskapp-pj/navyism/master/logo.png",
         'github': 'deskapp-pj/navyism'
     },
     {
@@ -16,16 +16,32 @@ const featurej = [
         'sites': 'https://www.dbdbschool.kr/',
         'alt': 'https://www.dbdbschool.kr/',
         'name': 'dbdbschool',
-        'links': 'https://placeimg.com/48/48/3',
+        'image': 'https://raw.githubusercontent.com/deskapp-pj/dbdbschool/master/logo.png',
         'github': 'deskapp-pj/dbdbschool'
     },
     {
         'id': 3,
         'sites': 'https://www.ealimi.com/Promotion',
         'alt': 'https://www.ealimi.com/',
-        'name': '이알리미',
-        'links': 'https://placeimg.com/48/48/3',
+        'name': 'e알리미',
+        'image': 'https://raw.githubusercontent.com/deskapp-pj/ealimi/master/logo.png',
         'github': 'deskapp-pj/ealimi',
+    },
+    {
+        'id': 4,
+        'sites': 'https://www.sparxmaths.uk/',
+        'alt': 'https://www.sparxmaths.uk/',
+        'name': 'Sparx Maths',
+        'image': 'https://raw.githubusercontent.com/deskapp-pj/sparxmaths/master/assets/icons/logo.png',
+        'github': 'deskapp-pj/sparxmaths',
+    },
+    {
+        'id': 5,
+        'sites': 'https://www.drfrostmaths.com/index.php',
+        'alt': 'https://www.drfrostmaths.com/',
+        'name': 'DrFrostMaths.com',
+        'image': 'https://raw.githubusercontent.com/deskapp-pj/drfrostmaths/master/assets/icons/logo.png',
+        'github': 'deskapp-pj/drfrostmaths',
     }
 ]
 
@@ -53,7 +69,7 @@ function Features() {
                 </TableHead>
                 <TableBody>
                     {featurej.map(c => {
-                        return <Feature key={c.id} id={c.id} name={c.name} alt={c.alt} sites={c.sites} links={c.links} github={c.github} />
+                        return <Feature key={c.id} id={c.id} name={c.name} alt={c.alt} sites={c.sites} image={c.image} github={c.github} />
                     })}
                 </TableBody>
             </Table>

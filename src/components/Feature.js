@@ -7,7 +7,7 @@ class Feature extends React.Component {
         return (
             <TableRow>
                 <TableCell>{this.props.id}</TableCell>
-                <TableCell><img src={"https://raw.githubusercontent.com/" + this.props.github + "/master/logo.png"} alt="logo" width="64px" height="64px" /></TableCell>
+                <TableCell><img src={this.props.image} alt="logo" width="64px" height="64px" /></TableCell>
                 <TableCell>{this.props.name}</TableCell>
                 <TableCell><a href={this.props.sites}>{this.props.alt}</a></TableCell>
                 <TableCell><a href={"https://github.com/" + this.props.github + "/releases"}>Download</a></TableCell>
